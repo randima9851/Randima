@@ -1,0 +1,13 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -g
+
+all: server client
+
+server: server_6732.c
+	$(CC) $(CFLAGS) -o server_6732 server_6732.c
+
+client: client_6732.c
+	$(CC) $(CFLAGS) -o client_6732 client_6732.c
+
+clean:
+	rm -f server_6732 client_6732
